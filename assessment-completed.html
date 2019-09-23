@@ -1,88 +1,109 @@
 <html>
-<html lang = "en">
+<html lang="en">
+
 <head>
-<title> Bootstrap Training Module </title>
-<meta charset = "UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <title> Bootstrap Training Module </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- add bootstrap cdn link here -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body><div class="container">
-<!-- add navbar style-->
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="#">WebSiteName</a>
+<body>
+  <div class="container"><!-- add container class -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"><!-- add navbar style-->
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Page 1</a>
+          <a class="nav-item nav-link" href="#">Page 2</a>
+          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron"><!-- add jumbotron class -->
+      <h1>Hello, World!</h1>
     </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-        </ul>
+    <div class="row"><!-- add row class -->
+      <!-- Make the divs into columns in this section below-->
+      <div class="col-sm-4"><!-- add column class -->
+        <p>The big cheese dolcelatte cheese and biscuits. Lancashire cow goat stilton pecorino paneer monterey jack
+          mascarpone. Cheese and wine manchego say cheese cream cheese everyone loves blue castello caerphilly stinking
+          bishop. Cheese on toast goat mozzarella rubber cheese port-salut cheesecake smelly cheese manchego. Dolcelatte
+          cow.</p>
+      </div>
+      <div class="col-sm-4"><!-- add column class -->
+        <p>Bocconcini fromage stilton. Cow macaroni cheese bavarian bergkase gouda monterey jack parmesan manchego
+          camembert de normandie. Rubber cheese bavarian bergkase cheese and biscuits cheddar blue castello lancashire
+          ricotta dolcelatte. Roquefort ricotta when the cheese comes out everybody's happy cheesy grin cheesecake
+          rubber cheese cheese and biscuits.</p>
+      </div>
+      <div class="col-sm-4"><!-- add column class -->
+        <p>Bocconcini rubber cheese stinking bishop. Fromage frais cheese strings macaroni cheese say cheese cheese and
+          wine edam swiss halloumi. Ricotta red leicester cut the cheese cream cheese pepper jack cheddar macaroni
+          cheese everyone loves. Squirty cheese dolcelatte jarlsberg monterey jack.</p>
+      </div>
     </div>
-</nav>
+    <hr>
+    <div class="row"><!-- add row class -->
+      <!-- Style the buttons below to their respected size -->
+      <div class="col-sm-4"><!-- add column class -->
+        <button type="button" class="btn btn-primary btn-sm">Small</button><!-- add button and button small class -->
+      </div>
+      <div class="col-sm-4"><!-- add column class -->
+        <button type="button" class="btn btn-primary btn-md">Medium</button><!-- add button and button medium class -->
+      </div>
+      <div class="col-sm-4"><!-- add column class -->
+        <button type="button" class="btn btn-primary btn-lg">Large</button><!-- add button and button large class -->
+      </div>
+    </div>
+    <hr>
+    <div class="row"><!-- add row class -->
+      <div class="col-sm-12"><img class="img-fluid" src="media/image.png"><!-- add image style class -->
+      </div>
+    </div>
+    <hr>
+    <div class="row"><!-- add row class -->
+      <div class="col-sm-12"><!-- add column class -->
+        <table class="table table-striped"><!-- add table class(es) -->
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <!-- bonus: add your own name and age to the table! -->
+        </table>
+      </div>
+    </div>
+  </div>
 
-<!-- add jumbotron class-->
-
-<div class="jumbotron">
-<h1>Hello, World!</h1>
-</div>
-
-<!-- add column classes to the articles -->
-<div class="row">
-<article class="col-sm-4">
-<p>The big cheese dolcelatte cheese and biscuits. Lancashire cow goat stilton pecorino paneer monterey jack
-  mascarpone. Cheese and wine manchego say cheese cream cheese everyone loves blue castello caerphilly stinking
-  bishop. Cheese on toast goat mozzarella rubber cheese port-salut cheesecake smelly cheese manchego. Dolcelatte
-  cow.</p>
-</article>
-<article class="col-sm-4">
-<p>Bocconcini fromage stilton. Cow macaroni cheese bavarian bergkase gouda monterey jack parmesan manchego
-  camembert de normandie. Rubber cheese bavarian bergkase cheese and biscuits cheddar blue castello lancashire
-  ricotta dolcelatte. Roquefort ricotta when the cheese comes out everybody's happy cheesy grin cheesecake
-  rubber cheese cheese and biscuits.</p>
-</article>
-<article class="col-sm-4">
-<p>Bocconcini rubber cheese stinking bishop. Fromage frais cheese strings macaroni cheese say cheese cheese and
-  wine edam swiss halloumi. Ricotta red leicester cut the cheese cream cheese pepper jack cheddar macaroni
-  cheese everyone loves. Squirty cheese dolcelatte jarlsberg monterey jack.</p>
-</article>
-</div>
-
-<!-- style the buttons to their respected size -->
-<button class="btn btn-sm" >Small</button>
-<button class="btn btn-md" >Medium</button>
-<button class="btn btn-lg" >Large</button>
-
-<!-- add image style here -->
-
-<article>
-<img class="img img-rounded" src="media/image.png">
-</article>
-
-<!-- add table style here -->
-<article>
-<table class="table" style="width:100%">
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-      </table>
-</article>
-</div>
+  <!-- add bootstrap script tags here -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
